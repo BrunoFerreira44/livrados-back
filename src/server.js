@@ -5,7 +5,7 @@ const routes = require('./routes/routes');
 const connToMongoDB = require('./database/conection');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 connToMongoDB();
 app.use(cors());
