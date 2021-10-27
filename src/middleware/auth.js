@@ -11,7 +11,6 @@ module.exports = {
       }
 
       const parts = authHeader.split(' ');
-      console.log(parts.length)
 
       if (parts.length !== 2) {
          return res.status(400).send({ error: "Token must have 2 parts" });
