@@ -14,9 +14,9 @@ routes.post('/login', loginController);
 routes.post('/user-registration', userRegistrationController);
 routes.post('/book-registration', authMiddleware.authUser, bookRegistrationController);
 
-routes.get('/searchBookByTitle', searchBookByTitleController);
-routes.get('/searchBookByCategory', searchBookByCategoryController);
-routes.get('/searchUserById', searchUserByIdController);
+routes.post('/searchBookByTitle', searchBookByTitleController);
+routes.post('/searchBookByCategory', searchBookByCategoryController);
+routes.post('/searchUserById', searchUserByIdController);
 
 routes.get('/auth', authMiddleware.authUser);
 
