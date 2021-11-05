@@ -9,6 +9,7 @@ const bookRegistrationController = require('../controller/bookRegistrationContro
 const searchBookByTitleController = require('../controller/searchBookByTitle');
 const searchBookByCategoryController = require('../controller/searchBookByCategory');
 const searchUserByIdController = require('../controller/searchUserById');
+const searchAllBooksController = require('../controller/searchAllBooks');
 
 routes.post('/login', loginController);
 routes.post('/user-registration', userRegistrationController);
@@ -17,6 +18,8 @@ routes.post('/book-registration', authMiddleware.authUser, bookRegistrationContr
 routes.post('/searchBookByTitle', searchBookByTitleController);
 routes.post('/searchBookByCategory', searchBookByCategoryController);
 routes.post('/searchUserById', searchUserByIdController);
+
+routes.get('/searchAllBooks', searchAllBooksController);
 
 routes.get('/auth', authMiddleware.authUser);
 
