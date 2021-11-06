@@ -1,4 +1,4 @@
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose');
 
 const BookSchema = new mongoose.Schema({
    title: {
@@ -6,23 +6,23 @@ const BookSchema = new mongoose.Schema({
       required: true,
    },
    isbn: {
-       type: Number,
-       required: true,
+      type: Number,
+      required: true,
    },
    author: {
-       type: String,
+      type: String,
    },
    edition: {
-       type: String,
+      type: String,
    },
    publisher: {
-       type: String,
+      type: String,
    },
    language: {
-       type: String,
+      type: String,
    },
    category: {
-       type: String,
+      type: String,
    },
    user_name: {
       type: String,
@@ -37,7 +37,7 @@ const BookSchema = new mongoose.Schema({
       required: true,
    },
    user_cep: {
-      type: Number,
+      type: String,
       required: true,
    },
    user_addressNumber: {

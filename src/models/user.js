@@ -1,5 +1,5 @@
-const mongoose = require ('mongoose');
-const crypto = require ('crypto');
+const mongoose = require('mongoose');
+const crypto = require('crypto');
 
 const UserSchema = new mongoose.Schema({
    name: {
@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema({
       required: true,
    },
    cep: {
-      type: Number,
+      type: String,
       required: true,
    },
    addressNumber: {
