@@ -13,7 +13,7 @@ const searchAllBooksController = require('../controller/searchAllBooks');
 
 routes.post('/login', loginController);
 routes.post('/user-registration', userRegistrationController);
-routes.post('/book-registration', authMiddleware.authUser, bookRegistrationController);
+routes.post('/book-registration', bookRegistrationController);
 
 routes.post('/searchBookByTitle', searchBookByTitleController);
 routes.post('/searchBookByCategory', searchBookByCategoryController);
