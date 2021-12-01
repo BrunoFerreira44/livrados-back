@@ -11,6 +11,7 @@ const searchBookByCategoryController = require('../controller/searchBookByCatego
 const searchUserByIdController = require('../controller/searchUserById');
 const searchAllBooksController = require('../controller/searchAllBooks');
 const searchBookByUserController = require('../controller/searchBookByUser');
+const deleteBookController = require('../controller/deleteBook');
 
 
 routes.post('/login', loginController);
@@ -21,8 +22,9 @@ routes.post('/searchBookByTitle', searchBookByTitleController);
 routes.post('/searchBookByCategory', searchBookByCategoryController);
 routes.post('/searchUserById', searchUserByIdController);
 routes.post('/searchBookByUser', searchBookByUserController);
-
 routes.get('/searchAllBooks', searchAllBooksController);
+
+routes.post('/deleteBook', deleteBookController);
 
 routes.get('/auth', authMiddleware.authUser);
 
